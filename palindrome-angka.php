@@ -3,6 +3,18 @@
 function palindrome_angka($angka) {
   // tulis kode di sini
   $huruf = $angka.tostring();
+  $p = strlen($huruf);
+  $kata="";
+  for($i=0; $i< $p; $i++){
+      kata=$kata . $tulisan[$p-$i-1];
+  }
+  $hasil="";
+  if ($kata==$tulisan){
+      $hasil="TRUE" ;
+  }else{
+      $hasil="FALSE" ;
+  }
+  
   echo $huruf . "<br>";
 }
 
